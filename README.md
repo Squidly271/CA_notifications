@@ -16,3 +16,8 @@ Searches for docker containers can either be akin to mccloud/ps3netsrv (searches
 Searches for plugins can either be by the filename (disklocation.plg) or via the full pluginURL to refine the search if necessary
 
 The code block if used must return either true (conditions met) or false (conditions NOT met).  IE: the return command has to be present
+
+unraid compares against unraid versions
+plugin compares against the version of the installed plugin
+
+The possible operators are: <, lt, <=, le, >, gt, >=, ge, ==, =, eq, !=, <>, ne respectively.  This parameter is case-sensitive, values should be lowercase.
