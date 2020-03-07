@@ -1,23 +1,23 @@
 {
   "binhex/arch-krusader:*": {
     "ID": 1,
-		"Banner": "binhex/arch-krusader Installed: Contains Malware",
-		"PopUp": "The author's GitHub / DockerHub repositories have been apparently hacked, and this application now has Crypto-Mining software embedded within it.  Highly advised to uninstall this application",
-		"email": "malware found on your server"
+    "Banner": "binhex/arch-krusader Installed: Contains Malware",
+    "PopUp": "The author's GitHub / DockerHub repositories have been apparently hacked, and this application now has Crypto-Mining software embedded within it.  Highly advised to uninstall this application",
+    "email": "malware found on your server"
   },
-	"unRAIDServer.plg": {
-		"ID": 2,
-		"Name": "unRAID OS",
-		"Banner": "Your unRAID Server is vulnerable",
-		"PopUp": "A vulnerability in forms-based authorization has been found.  You need to install the sysdream plugin to mitigate this.  See <a href='https://forums.unraid.net/topic/88253-critical-security-vulnerabilies-discovered/' target='_blank'>here</a> for more details",
-		"email": "Server is vulnerable to unauthorized logins",
-		"Conditions": {
-			"unraid": [
-				[ ">=","6.7.0" ],
-				[ "<=","6.8.3" ],
-				[ "!","6.8.0" ]
-			],
-			"code": "return ! is_file('/var/log/plugins/sysdream.plg');"
-		}
-	}
+  "unRAIDServer.plg": {
+    "ID": 2,
+    "Name": "unRAID OS",
+    "Banner": "Your unRAID Server is vulnerable",
+    "PopUp": "A vulnerability in forms-based authorization has been found.  You need to install the sysdream plugin to mitigate this.  See <a href='https://forums.unraid.net/topic/88253-critical-security-vulnerabilies-discovered/' target='_blank'>here</a> for more details",
+    "email": "Server is vulnerable to unauthorized logins",
+    "Conditions": {
+      "unraid": [
+        [ ">=","6.7.0" ],
+        [ "<=","6.8.3" ],
+        [ "!","6.8.0" ]
+      ],
+      "code": "return ! is_file('/var/log/plugins/sysdream.plg');"
+    }
+  }
 }
