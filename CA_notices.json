@@ -1,9 +1,9 @@
 {
 	"binhex/arch-krusader:*": {
 		"ID": 1,
-		"Banner": "binhex/arch-krusader Installed: Contains Malware",
+		"Banner": "mccloud/ps3netsrv Installed: Contains Crypto-Mining Software",
 		"PopUp": "The author's GitHub / DockerHub repositories have been apparently hacked, and this application now has Crypto-Mining software embedded within it.  Highly advised to uninstall this application",
-		"email": "malware found on your server"
+		"email": "Crypto-Mining software found on your server"
 	},
 	"unRAIDServer.plg": {
 		"ID": 2,
