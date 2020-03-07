@@ -22,8 +22,8 @@
   },
 	"community.applications.plg": {
 	  "ID": 3,
-		"Name": "Community Applications",
-		"Banner": "Excessive writes to the flash drive",
+		"Name": "Disk Location",
+		"Banner": "Disk Location causes excessive writes to the flash drive",
 		"PopUp": "This plugin is known to cause excessive writes to the flash drive possibly causing it to prematurely fail.  Highly advised to update to the latest version to fix this",
 		"email": "Excessive writes to the flash drive",
 		"Conditions": {
