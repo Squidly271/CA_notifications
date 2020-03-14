@@ -33,6 +33,7 @@
   },
   "community.applications.plg": {
     "ID": 4,
+		"Force": true,
     "Name": "Help Fight COVID-19",
     "Banner": "You can let your server help fight COVID-19",
     "PopUp": "You can install either BOINC or FOLDING@HOME software on your server to let it help fight the spread of COVID-19.  See <a href='https://unraid.net/blog/help-take-the-fight-to-covid-19-with-boinc-or-folding-home' target='_blank'>HERE</a> for more details",
