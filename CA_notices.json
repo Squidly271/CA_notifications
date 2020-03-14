@@ -1,5 +1,5 @@
 {
-	"binhex/arch-krusader:*": {
+	"mccloud/ps3netsrv:*": {
 		"ID": 1,
 		"Banner": "mccloud/ps3netsrv Installed: Contains Crypto-Mining Software",
 		"PopUp": "The author's GitHub / DockerHub repositories have been apparently hacked, and this application now has Crypto-Mining software embedded within it.  Highly advised to uninstall this application",
@@ -13,14 +13,13 @@
 		"email": "Server is vulnerable to unauthorized logins",
 		"Conditions": {
 			"unraid": [
-				[ ">=","6.7.0" ],
-				[ "<=","6.8.3" ],
-				[ "!","6.8.0" ]
+				[ ">=","6.6.0" ],
+				[ "<=","6.8.0" ]
 			],
 			"code": "return ! is_file('/var/log/plugins/sysdream.plg');"
 		}
 	},
-	"community.applications.plg": {
+	"disklocation-master.plg": {
 		"ID": 3,
 		"Name": "Disk Location",
 		"Banner": "Installed version of Disk Location causes excessive writes to the flash drive",
@@ -31,5 +30,15 @@
 				[ "<","2020.03.08" ]
 			]
 		}
-	}
+	},
+	"community.applications.plg": {
+	  "ID": 4,
+		"Name": "Help Fight COVID-19",
+		"Banner": "You can let your server help fight COVID-19",
+		"PopUp": "You can install either BOINC or FOLDING@HOME software on your server to let it help fight the spread of COVID-19.  See <a href='https://unraid.net/blog/help-take-the-fight-to-covid-19-with-boinc-or-folding-home' target='_blank'>HERE</a> for more details",
+		"email": "You can have your server help with the fight against COVID-19.  Login to your server for more details.  (To not receive this message again, you can dismiss the banner once you've logged in to the server",
+		"Conditions": {
+		  "code": "return ( ! exec('docker ps -a | grep foldingathome') && ! exec('docker ps -a | grep boinc') );"
+		}
+  }		
 }
