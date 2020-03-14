@@ -36,7 +36,7 @@
 		"Name": "Help Fight COVID-19",
 		"Banner": "You can let your server help fight COVID-19",
 		"PopUp": "You can install either BOINC or FOLDING@HOME software on your server to let it help fight the spread of COVID-19.  See <a href='https://unraid.net/blog/help-take-the-fight-to-covid-19-with-boinc-or-folding-home' target='_blank'>HERE</a> for more details",
-		"email": "You can have your server help with the fight against COVID-19.  Login to your server for more details.  (To not receive this message again, you can dismiss the banner once you've logged in to the server",
+		"email": "You can have your server help with the fight against COVID-19.",
 		"Conditions": {
 		  "code": "exec('docker info',$output,$retval); return $retval ? false : (! exec('docker ps -a | grep foldingathome') && ! exec('docker ps -a | grep boinc') );"
 		}
