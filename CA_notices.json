@@ -27,7 +27,7 @@
 		"email": "Excessive writes to the flash drive",
 		"Conditions": {
 			"plugin": [
-				[ "<","2020.02.01" ]
+				[ "<","2020.02.23" ]
 			]
 		}
 	},
